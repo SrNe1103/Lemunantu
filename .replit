@@ -1,11 +1,12 @@
 modules = ["python-3.11", "web"]
-run = "run = \"python3 -m http.server\""
+run = "python3 -m http.server"
+language = "html"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "run = \"python3 -m http.server\""]
+run = ["sh", "-c", "python3 -m http.server"]
 
 [[ports]]
 localPort = 8000
