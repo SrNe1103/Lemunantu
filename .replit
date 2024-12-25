@@ -1,4 +1,8 @@
 modules = ["web"]
+run = "entrypoint = \"index.html\""
 
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "entrypoint = \"index.html\""]
