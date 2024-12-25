@@ -1,8 +1,8 @@
 modules = ["web"]
-run = "entrypoint = \"index.html\""
+run = "run = \"npm start\""
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "entrypoint = \"index.html\""]
+run = ["sh", "-c", "run = \"npm start\""]
