@@ -29,12 +29,12 @@ green: rgba(77, 150, 22, 1)
 
 body{
     background-image: none;
-    background-color: rgba(122, 201, 73, 0.39);
+    background-color: #7ac94963;
     font-family: "Libre Franklin", sans-serif;
 }
 
 header{
-    background-color: rgba(77, 150, 22, 1);
+    background-color: #4e9717;
     text-align: center;
 }
 
@@ -45,12 +45,11 @@ nav{
 
 nav li{
     display: table-cell;
-    background-color: rgb(91, 177, 25);
+    background-color: #5bb119;
     width: 9em;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 5px;
     text-align: left;
-    text-indent: 0.25em;
 }
 
 nav a{
