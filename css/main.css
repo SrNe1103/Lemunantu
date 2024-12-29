@@ -37,8 +37,20 @@ nav{
 
 nav li{
     display: inline-block;
+    background-color: rgb(91, 177, 25);
+    width: 8em;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    width: 7.5em;
+}
+
+.icon{
+    color: rgb(44, 0, 146);
+    background: none;
+    text-decoration: none;
+    display: inline;
 }
 
 footer a{
