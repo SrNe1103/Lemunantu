@@ -14,16 +14,23 @@ green: rgba(77, 150, 22, 1)
     */
 
 .libre-franklin-title {
-    font-family: "Libre Franklin", serif;
+    font-family: "Libre Franklin", asns-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     }
 
+.icon{
+    color: rgb(44, 0, 146);
+    background: none;
+    text-decoration: none;
+    display: table-cell;
+}    
+
 body{
     background-image: none;
-    background-color: rgb(134, 223, 79);
-    font-family: "Libre Franklin", Arial, sans-serif;
+    background-color: rgb(122, 201, 73);
+    font-family: "Libre Franklin", sans-serif;
 }
 
 header{
@@ -32,26 +39,23 @@ header{
 }
 
 nav{
-    text-align: center;
     display: table;
+    text-align: center;
 }
 
 nav li{
     display: table-cell;
     background-color: rgb(91, 177, 25);
-    width: 8em;
+    width: 9em;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    text-indent: 0.25em;
 }
 
 nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-.icon{
-    color: rgb(44, 0, 146);
-    background: none;
-    text-decoration: none;
-    display: table-cell;
 }
 
 footer a{
