@@ -1,0 +1,18 @@
+/*palette
+lightgreen: rgba(120, 199, 72, 1)
+green: rgba(77, 150, 22, 1)
+*/
+
+body{
+    background-image: none;
+    background-color: rgba(120, 199, 72, 1);
+}
+
+header{
+    background-color: rgba(77, 150, 22, 1);
+    text-align: center;
+}
+
+nav{
+
+}
