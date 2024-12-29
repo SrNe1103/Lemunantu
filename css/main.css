@@ -33,10 +33,11 @@ header{
 
 nav{
     text-align: center;
+    display: table;
 }
 
 nav li{
-    display: inline-block;
+    display: table-cell;
     background-color: rgb(91, 177, 25);
     width: 8em;
 }
@@ -50,7 +51,7 @@ nav a{
     color: rgb(44, 0, 146);
     background: none;
     text-decoration: none;
-    display: inline;
+    display: table-cell;
 }
 
 footer a{
