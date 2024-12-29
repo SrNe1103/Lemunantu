@@ -32,7 +32,13 @@ header{
 }
 
 nav{
+    text-align: center;
+}
 
+nav li{
+    display: inline-block;
+    text-decoration: none;
+    width: 7.5em;
 }
 
 footer a{
