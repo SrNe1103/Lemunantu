@@ -29,7 +29,7 @@ green: rgba(77, 150, 22, 1)
 
 body{
     background-image: none;
-    background-color: rgb(122, 201, 73);
+    background-color: rgba(122, 201, 73, 0.39);
     font-family: "Libre Franklin", sans-serif;
 }
 
