@@ -32,7 +32,6 @@ body{
     background-color: #b5ff87;
     font-family: "Libre Franklin", sans-serif;
     margin: 2;
-    padding: 2;
 }
 
 header{
@@ -42,21 +41,29 @@ header{
 
 nav{
     display: table;
-    text-align: center;
+    font-size: 1.2em;
+}
+
+ul{
+    padding-left: 0.1em;
+    
 }
 
 nav li{
     display: table-cell;
+    vertical-align: middle;
+    width: 8em;
     background-color: #5bb119;
-    width: 9em;
     border: 1px solid #000000;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
+    padding: 0.2em;
 }
 
 nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
+    padding: 0.2em;
 }
 
 footer a{
