@@ -22,10 +22,9 @@ green: rgba(77, 150, 22, 1)
     }
 
 .icon{
-    color: rgb(44, 0, 146);
-    background: none;
+    color: #4300df;
     text-decoration: none;
-    display: table-cell;
+    border: 0.5px solid #000000;
 }    
 
 body{
@@ -41,28 +40,37 @@ header{
     text-align: center;
 }
 
+p{
+    margin: 0.3em;
+}
+
 nav{
     font-size: 1.2em;
 }
 
 ul{
-    padding-left: 0.1em;
+    background-image: url("/images/nav_background.jpeg");
+    padding: 0.1em 0 0.1em 0.1em;
     list-style-type: none;
     display: flex;
+    justify-content: flex-start;
     text-align: center;
     flex-wrap: nowrap;
+    margin: 0.4em 0 0.4em 0;
 }
 
 nav li{
-    width: 8em;
     background-color: #5bb119;
     border: 0.5px solid #000000;
-    border-radius: 5px;
     padding: 0.2em;
+    width: 20%;
+    min-width: fit-content;
+    max-width: 200px;
 }
 
 nav a{
-    color: rgb(0, 0, 0);
+    background-color: #5bb119;
+    color: #000000;
     text-decoration: none;
     padding: 0.2em;
 }

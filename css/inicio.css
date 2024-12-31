@@ -1,0 +1,15 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+aside{
+    font-size: 0.85em;
+}
+
+aside img{
+    margin: 1em;
+    width: 90%;
+}
