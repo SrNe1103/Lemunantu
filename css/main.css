@@ -62,10 +62,12 @@ ul{
 nav li{
     background-color: #5bb119;
     border: 0.5px solid #000000;
+    border-radius: 5px;
     padding: 0.2em;
     width: 20%;
     min-width: fit-content;
     max-width: 200px;
+    margin: 0 0.1em 0 0.1em;
 }
 
 nav a{
@@ -73,6 +75,11 @@ nav a{
     color: #000000;
     text-decoration: none;
     padding: 0.2em;
+}
+
+nav li:hover a, nav li:hover{
+    background-color: #3e751c;
+    color: #ffffff;
 }
 
 footer a{
