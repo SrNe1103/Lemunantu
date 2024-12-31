@@ -16,8 +16,9 @@ green: rgba(77, 150, 22, 1)
 .libre-franklin-title {
     font-family: "Libre Franklin", asns-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 550;
     font-style: normal;
+    font-size: 2.5em;
     }
 
 .icon{
@@ -28,6 +29,7 @@ green: rgba(77, 150, 22, 1)
 }    
 
 body{
+    min-width: 955px;
     background-image: none;
     background-color: #b5ff87;
     font-family: "Libre Franklin", sans-serif;
@@ -40,23 +42,22 @@ header{
 }
 
 nav{
-    display: table;
     font-size: 1.2em;
 }
 
 ul{
     padding-left: 0.1em;
-    
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
 nav li{
-    display: table-cell;
-    vertical-align: middle;
     width: 8em;
     background-color: #5bb119;
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     border-radius: 5px;
-    text-align: center;
     padding: 0.2em;
 }
 
