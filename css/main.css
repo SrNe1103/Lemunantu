@@ -43,6 +43,15 @@ body{
     margin: 0;
 }
 
+a[href="#content"]{
+    text-decoration: none;
+    background-color: #4e9717;
+    color: #000000;
+    font-size: 0.5em;
+    display: block;
+    margin: 0;
+}
+
 header{
     background-color: #4e9717;
     text-align: center;
