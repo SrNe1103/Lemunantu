@@ -12,4 +12,5 @@ aside{
 aside img{
     margin: 1em;
     width: 90%;
+    border: 8px groove #3e751c;
 }

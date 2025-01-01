@@ -22,10 +22,18 @@ green: rgba(77, 150, 22, 1)
     }
 
 .icon{
-    color: #4300df;
     text-decoration: none;
     border: 0.5px solid #000000;
+    border-radius: 4px;
 }    
+
+.current{
+    border: 2px solid #000000;
+}
+
+.current, .current a{
+    background-color: #71e618;
+}
 
 body{
     min-width: 955px;
