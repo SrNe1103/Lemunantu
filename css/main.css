@@ -36,9 +36,11 @@ green: rgba(77, 150, 22, 1)
 }
 
 body{
-    min-width: 955px;
+    min-width: auto;
+    min-height: 1000px;
     background-image: none;
     background-color: #b5ff87;
+    background: linear-gradient(#b5ff87, #3e751c);
     font-family: "Libre Franklin", sans-serif;
     margin: 0;
 }
