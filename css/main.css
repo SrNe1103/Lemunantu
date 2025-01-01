@@ -49,7 +49,7 @@ nav{
 }
 
 ul{
-    background-image: url("/images/nav_background.jpeg");
+    background-image: url("https://raw.githubusercontent.com/SrNe1103/Lemunantu/refs/heads/master/images/nav_background.jpeg");
     padding: 0.1em 0 0.1em 0.1em;
     list-style-type: none;
     display: flex;
