@@ -56,6 +56,9 @@ a[href="#content"]{
 
 header{
     background-color: #4e9717;
+    background-image: url(../images/front.jpg);
+    background-size: 50%;
+    background-position-y: 30%;
     text-align: center;
 }
 
@@ -68,6 +71,7 @@ nav{
 }
 
 ul{
+    background-color: #64392b;
     background-image: url("https://raw.githubusercontent.com/SrNe1103/Lemunantu/refs/heads/master/images/wood_background.jpeg");
     padding: 0.1em 0 0.1em 0.1em;
     list-style-type: none;
