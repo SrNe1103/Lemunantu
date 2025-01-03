@@ -18,7 +18,7 @@ green: rgba(77, 150, 22, 1)
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
-    font-size: 2.5em;
+    font-size: 3.5em;
     }
 
 .icon{
@@ -36,8 +36,8 @@ green: rgba(77, 150, 22, 1)
 }
 
 body{
-    min-width: auto;
-    min-height: 1000px;
+    min-height: 1024px;
+    min-width: 1024px;
     background-image: none;
     background-color: #b5ff87;
     background: linear-gradient(#b5ff87, #3e751c);
@@ -55,15 +55,45 @@ a[href="#content"]{
 }
 
 header{
-    background-color: #4e9717;
-    background-image: url(../images/front.jpg);
+    height: 300px;
+    background-color: #b5ff87;
+    background-image: url(../images/green_space.jpg);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-y: 30%;
+    background-size: cover;
+    background-position: center 70%;
     text-align: center;
 }
 
-p{
+header img{
+    float: left;
+    width: 10%;
+    margin: 1em 1.5em;
+    background-color: white;
+    border: #000000 1px solid;
+    border-radius: 100%;
+}
+
+header br{
+    margin: 3em;
+}
+
+header h1, header p{
+    background-color: #4e971788;
+    color: #e4e1e1;
+    border-radius: 10px;
+    padding: 0.1em;
+    margin: 0 auto;
+}
+
+header h1{
+    width: 11.5em;
+}
+
+header p{
+    width: 12em;
+}
+
+main p{
     margin: 0.3em;
 }
 
