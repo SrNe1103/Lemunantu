@@ -57,6 +57,7 @@ a[href="#content"]{
 header{
     background-color: #4e9717;
     background-image: url(../images/front.jpg);
+    background-repeat: no-repeat;
     background-size: 50%;
     background-position-y: 30%;
     text-align: center;
@@ -72,7 +73,8 @@ nav{
 
 ul{
     background-color: #64392b;
-    background-image: url("https://raw.githubusercontent.com/SrNe1103/Lemunantu/refs/heads/master/images/wood_background.jpeg");
+    background-image: url(../images/wood_background.jpeg);
+    background-repeat: repeat-x;
     padding: 0.1em 0 0.1em 0.1em;
     list-style-type: none;
     display: flex;
@@ -101,6 +103,11 @@ nav a{
 }
 
 nav li:hover a, nav li:hover{
+    background-color: #3e751c;
+    color: #ffffff;
+}
+
+nav li a:focus{
     background-color: #3e751c;
     color: #ffffff;
 }
