@@ -46,12 +46,18 @@ body{
 }
 
 a[href="#content"]{
+    position: absolute;
+    left:-1000px;
     text-decoration: none;
-    background-color: #4e9717;
+    background-color: #71e618;
+    border-radius: 4px;
     color: #000000;
-    font-size: 0.5em;
+    font-size: 1em;
     display: block;
-    margin: 0;
+    padding: 0.2em;
+}
+a[href="#content"]:focus{
+    left: 0;
 }
 
 header{
@@ -132,14 +138,10 @@ nav a{
     padding: 0.2em;
 }
 
-nav li:hover a, nav li:hover{
+nav li:hover a, nav li:hover, nav li a:focus{
     background-color: #3e751c;
     color: #ffffff;
-}
-
-nav li a:focus{
-    background-color: #3e751c;
-    color: #ffffff;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 footer a{
