@@ -16,7 +16,7 @@ green: rgba(77, 150, 22, 1)
 .libre-franklin-title {
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 700;
     font-style: normal;
     font-size: 3.5em;
     }
@@ -38,7 +38,6 @@ green: rgba(77, 150, 22, 1)
 body{
     min-height: 1024px;
     min-width: 1024px;
-    background-image: none;
     background-color: #b5ff87;
     background: linear-gradient(#b5ff87, #3e751c);
     font-family: "Libre Franklin", sans-serif;
@@ -84,9 +83,10 @@ header br{
 }
 
 header h1, header p{
-    background-color: #4e971788;
-    color: #e4e1e1;
+    background-color: #00000075;
+    color: #3b63ff;
     border-radius: 10px;
+    font-weight: 700;
     padding: 0.1em;
     margin: 0 auto;
 }
@@ -97,6 +97,7 @@ header h1{
 
 header p{
     width: 12em;
+    font-size: 2em;
 }
 
 main p{
