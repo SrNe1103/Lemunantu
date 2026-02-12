@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/cca73425/public_html/test
-    - /bin/cp -R * $DEPLOYPATH
+    # Delete all files in public_html/test
+    - /bin/rm -rf $DEPLOYPATH/*
+    # Copy the new ones excluding .git and .cpanel.yml
+    - /bin/tar --exclude='.git' --exclude='.cpanel.yml' -cf - . | (cd $DEPLOYPATH && /bin/tar -xvf -)
