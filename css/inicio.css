@@ -1,6 +1,6 @@
 /* =============================================
    PÁGINA PRINCIPAL — inicio.css
-   Paleta: lightgreen #78c748 | green #4d9616 | dark green #3e751c
+   Paleta: Verde Profundo Moderno (Opción 4)
    ============================================= */
 
 /* --- SECCIÓN BIENVENIDA --- */
@@ -20,6 +20,8 @@
     color: #1a3a0a;
     margin-bottom: 0.6em;
     text-wrap: balance;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
 }
 
 .bienvenida-texto p {
@@ -32,44 +34,48 @@
 
 .bienvenida-imagen img {
     width: 100%;
-    border: 8px groove #3e751c;
+    border: 8px groove #2f5c1a;
     border-radius: 6px;
     display: block;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .bienvenida-imagen img:hover {
     transform: scale(1.02);
-    box-shadow: 6px 6px 24px rgba(0,0,0,0.35);
+    box-shadow: 6px 6px 24px rgba(0,0,0,0.28);
 }
 
-/* Botón principal */
 .btn-principal {
     display: inline-block;
     margin-top: 0.8em;
     padding: 0.55em 1.4em;
-    background-color: #4d9616;
+    background-color: #4d8c28;
     color: #ffffff;
     font-weight: 700;
     font-size: 1em;
     text-decoration: none;
     border-radius: 6px;
-    border: 2px solid #3e751c;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #2f5c1a;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: inherit;
 }
 
 .btn-principal:hover,
 .btn-principal:focus {
-    background-color: #3e751c;
-    color: #b5ff87;
+    background-color: #2f5c1a;
+    color: #dff0c8;
     transform: translateY(-2px);
     outline: none;
 }
 
-/* --- SECCIÓN HIGHLIGHTS --- */
+/* --- SECCIÓN HIGHLIGHTS (fondo alternado) --- */
 .seccion-highlights {
+    background-color: #cce6b0;
     padding: 2.5em 3em;
+}
+
+.seccion-highlights-inner {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -78,20 +84,9 @@
     font-size: 1.8em;
     font-weight: 700;
     color: #1a3a0a;
-    text-align: center;
     margin-bottom: 1.5em;
-    position: relative;
-}
-
-/* Línea decorativa bajo el título */
-.seccion-titulo::after {
-    content: '';
-    display: block;
-    width: 4em;
-    height: 4px;
-    background-color: #78c748;
-    border-radius: 2px;
-    margin: 0.4em auto 0;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
 }
 
 .highlights-grid {
@@ -101,17 +96,17 @@
 }
 
 .highlight-card {
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(62, 117, 28, 0.4);
+    background-color: #ffffff;
+    border: 1px solid #aad480;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 12px rgba(26,58,10,0.10);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .highlight-card:hover {
     transform: translateY(-4px);
-    box-shadow: 4px 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 20px rgba(26,58,10,0.18);
 }
 
 .highlight-img-wrap {
@@ -134,26 +129,25 @@
 
 .highlight-contenido {
     padding: 1.2em;
-    text-align: center;
 }
 
 .highlight-contenido i {
-    font-size: 1.8em;
-    color: #3e751c;
+    font-size: 1.6em;
+    color: #4d8c28;
     margin-bottom: 0.4em;
     display: block;
 }
 
 .highlight-contenido h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
     font-weight: 700;
     color: #1a3a0a;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
 }
 
 .highlight-contenido p {
     font-size: 0.9em;
-    color: #1a3a0a;
+    color: #2f5c1a;
     line-height: 1.6;
     text-align: justify;
 }
@@ -192,72 +186,39 @@
 }
 
 .ubicacion-texto address i {
-    color: #3e751c;
+    color: #4d8c28;
     font-size: 1.1em;
 }
 
 .ubicacion-mapa img {
     width: 100%;
-    border: 8px groove #3e751c;
+    border: 8px groove #2f5c1a;
     border-radius: 6px;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
 }
 
-/* Botón maps */
 .btn-maps {
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
     padding: 0.55em 1.4em;
-    background-color: #4d9616;
+    background-color: #4d8c28;
     color: #ffffff;
     font-weight: 700;
     font-size: 1em;
     text-decoration: none;
     border-radius: 6px;
-    border: 2px solid #3e751c;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #2f5c1a;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: inherit;
 }
 
 .btn-maps:hover,
 .btn-maps:focus {
-    background-color: #3e751c;
-    color: #b5ff87;
+    background-color: #2f5c1a;
+    color: #dff0c8;
     transform: translateY(-2px);
     outline: none;
-}
-
-/* --- FOOTER ampliado --- */
-footer {
-    background-color: #64392b;
-    background-image: url(../images/wood_background.jpeg);
-    background-repeat: repeat-x;
-    color: #ffffff;
-    text-align: center;
-    padding: 1.2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    font-size: 0.95em;
-}
-
-footer p,
-footer address {
-    font-style: normal;
-    color: #ffffff;
-}
-
-footer a {
-    color: #b5ff87;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffffff;
 }
 
 /* --- RESPONSIVIDAD --- */

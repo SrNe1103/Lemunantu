@@ -1,9 +1,8 @@
 /* =============================================
    QUIÉNES SOMOS — quienes_somos.css
-   Extiende main.css sin modificarlo.
+   Paleta: Verde Profundo Moderno (Opción 4)
    ============================================= */
 
-/* --- SECCIÓN BASE (alternancia imagen/texto) --- */
 .qs-seccion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,10 +13,10 @@
     margin: 0 auto;
 }
 
-/* Alternar orden: secciones pares → imagen a la derecha */
-.qs-historia   { }
-.qs-sustentabilidad .qs-imagen { order: -1; }
-.qs-museo .qs-imagen           { order: 1;  }
+.qs-sustentabilidad,
+.qs-museo-wrap {
+    background-color: #cce6b0;
+}
 
 .qs-texto h2 {
     font-size: 1.8em;
@@ -25,6 +24,8 @@
     color: #1a3a0a;
     margin-bottom: 0.7em;
     text-wrap: balance;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
 }
 
 .qs-texto p {
@@ -37,47 +38,45 @@
 
 .qs-texto em {
     font-style: italic;
-    color: #3e751c;
+    color: #4d8c28;
+    font-weight: 600;
 }
 
-/* --- PLACEHOLDER PARA FOTOS PENDIENTES --- */
 .qs-imagen-placeholder {
     width: 100%;
     aspect-ratio: 4 / 3;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 3px dashed #4d9616;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px dashed #4d8c28;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.6em;
-    color: #3e751c;
+    color: #4d8c28;
     font-size: 0.95em;
     font-weight: 600;
 }
 
 .qs-imagen-placeholder i {
     font-size: 2.5em;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
-/* Imagen real (cuando se reemplace el placeholder) */
 .qs-imagen img {
     width: 100%;
-    border: 8px groove #3e751c;
+    border: 8px groove #2f5c1a;
     border-radius: 6px;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
     display: block;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .qs-imagen img:hover {
     transform: scale(1.02);
-    box-shadow: 6px 6px 24px rgba(0,0,0,0.35);
+    box-shadow: 6px 6px 24px rgba(0,0,0,0.28);
 }
 
-/* --- SECCIÓN VALORES (grid de 4 tarjetas) --- */
 .qs-valores {
     display: block;
     padding: 2.5em 3em;
@@ -93,23 +92,23 @@
 }
 
 .qs-valor-item {
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(62, 117, 28, 0.4);
+    background-color: #ffffff;
+    border: 1px solid #aad480;
     border-radius: 10px;
     padding: 1.4em 1.2em;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 10px rgba(26,58,10,0.10);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .qs-valor-item:hover {
     transform: translateY(-4px);
-    box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px rgba(26,58,10,0.18);
 }
 
 .qs-valor-item i {
     font-size: 2em;
-    color: #3e751c;
+    color: #4d8c28;
     margin-bottom: 0.5em;
     display: block;
 }
@@ -123,27 +122,28 @@
 
 .qs-valor-item p {
     font-size: 0.88em;
-    color: #1a3a0a;
+    color: #2f5c1a;
     line-height: 1.6;
     text-align: justify;
 }
 
-/* --- BANNER SERNATUR --- */
 .qs-seccion-banner {
     display: flex;
     align-items: center;
     gap: 1.5em;
-    background-color: rgba(62, 117, 28, 0.15);
-    border-left: 6px solid #3e751c;
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-left: 6px solid #4d8c28;
     border-radius: 0 10px 10px 0;
     padding: 1.8em 3em;
     max-width: 1200px;
     margin: 0 auto 2.5em;
+    box-shadow: 0 2px 12px rgba(26,58,10,0.10);
 }
 
 .qs-seccion-banner > i {
     font-size: 3em;
-    color: #3e751c;
+    color: #4d8c28;
     flex-shrink: 0;
 }
 
@@ -160,14 +160,12 @@
     line-height: 1.65;
 }
 
-/* --- RESPONSIVIDAD --- */
 @media (max-width: 900px) {
     .qs-seccion {
         grid-template-columns: 1fr;
         padding: 1.5em;
     }
 
-    /* Restablecer orden en móvil: siempre texto arriba, imagen abajo */
     .qs-sustentabilidad .qs-imagen,
     .qs-museo .qs-imagen {
         order: unset;
@@ -186,7 +184,7 @@
         text-align: center;
         padding: 1.5em;
         border-left: none;
-        border-top: 6px solid #3e751c;
+        border-top: 6px solid #4d8c28;
         border-radius: 0 0 10px 10px;
         margin: 0 1em 2em;
     }
