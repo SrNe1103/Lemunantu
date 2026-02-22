@@ -1,0 +1,199 @@
+/* =============================================
+   QUIÉNES SOMOS — quienes_somos.css
+   Extiende main.css sin modificarlo.
+   ============================================= */
+
+/* --- SECCIÓN BASE (alternancia imagen/texto) --- */
+.qs-seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5em;
+    align-items: center;
+    padding: 2.5em 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Alternar orden: secciones pares → imagen a la derecha */
+.qs-historia   { }
+.qs-sustentabilidad .qs-imagen { order: -1; }
+.qs-museo .qs-imagen           { order: 1;  }
+
+.qs-texto h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.7em;
+    text-wrap: balance;
+}
+
+.qs-texto p {
+    font-size: 1.05em;
+    line-height: 1.75;
+    text-align: justify;
+    color: #1a3a0a;
+    margin-bottom: 1em;
+}
+
+.qs-texto em {
+    font-style: italic;
+    color: #3e751c;
+}
+
+/* --- PLACEHOLDER PARA FOTOS PENDIENTES --- */
+.qs-imagen-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px dashed #4d9616;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    color: #3e751c;
+    font-size: 0.95em;
+    font-weight: 600;
+}
+
+.qs-imagen-placeholder i {
+    font-size: 2.5em;
+    opacity: 0.6;
+}
+
+/* Imagen real (cuando se reemplace el placeholder) */
+.qs-imagen img {
+    width: 100%;
+    border: 8px groove #3e751c;
+    border-radius: 6px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.qs-imagen img:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 24px rgba(0,0,0,0.35);
+}
+
+/* --- SECCIÓN VALORES (grid de 4 tarjetas) --- */
+.qs-valores {
+    display: block;
+    padding: 2.5em 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.qs-valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.qs-valor-item {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(62, 117, 28, 0.4);
+    border-radius: 10px;
+    padding: 1.4em 1.2em;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qs-valor-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
+}
+
+.qs-valor-item i {
+    font-size: 2em;
+    color: #3e751c;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.qs-valor-item h3 {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.5em;
+}
+
+.qs-valor-item p {
+    font-size: 0.88em;
+    color: #1a3a0a;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- BANNER SERNATUR --- */
+.qs-seccion-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    background-color: rgba(62, 117, 28, 0.15);
+    border-left: 6px solid #3e751c;
+    border-radius: 0 10px 10px 0;
+    padding: 1.8em 3em;
+    max-width: 1200px;
+    margin: 0 auto 2.5em;
+}
+
+.qs-seccion-banner > i {
+    font-size: 3em;
+    color: #3e751c;
+    flex-shrink: 0;
+}
+
+.qs-seccion-banner h2 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.4em;
+}
+
+.qs-seccion-banner p {
+    font-size: 1em;
+    color: #1a3a0a;
+    line-height: 1.65;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 900px) {
+    .qs-seccion {
+        grid-template-columns: 1fr;
+        padding: 1.5em;
+    }
+
+    /* Restablecer orden en móvil: siempre texto arriba, imagen abajo */
+    .qs-sustentabilidad .qs-imagen,
+    .qs-museo .qs-imagen {
+        order: unset;
+    }
+
+    .qs-valores {
+        padding: 1.5em;
+    }
+
+    .qs-valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qs-seccion-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5em;
+        border-left: none;
+        border-top: 6px solid #3e751c;
+        border-radius: 0 0 10px 10px;
+        margin: 0 1em 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .qs-valores-grid {
+        grid-template-columns: 1fr;
+    }
+}

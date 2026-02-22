@@ -69,6 +69,10 @@ $t           = $i18n[$lang];
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/inicio.css">
+
+<?php if (isset($css_extra)): ?>
+    <link rel="stylesheet" href="<?= $css_extra ?>">
+<?php endif; ?>
 </head>
 <body>
     <a href="#content" class="skip-link"><?= $t['skip_link'] ?></a>
