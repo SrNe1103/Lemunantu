@@ -34,7 +34,7 @@ require_once 'includes/header.php';
             <h2 class="seccion-titulo">A place worth coming back to</h2>
             <div class="qs-valores-grid">
                 <div class="qs-valor-item">
-                    <i class="fa-solid fa-house-chimney-heart" aria-hidden="true"></i>
+                    <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
                     <h3>Family-run</h3>
                     <p>We are still a family business, with very few outside employees. That shows in the care, the details, and the way the place is looked after.</p>
                 </div>
