@@ -43,7 +43,6 @@
 /* --- BODY --- */
 body {
     min-height: 100vh;
-    min-width: 1024px;
     background-color: #dff0c8;
     font-family: "Libre Franklin", sans-serif;
     margin: 0;
@@ -218,4 +217,70 @@ footer a {
 
 footer a:hover {
     color: #ffffff;
+}
+
+/* =============================================
+   RESPONSIVIDAD GLOBAL — main.css
+   ============================================= */
+
+@media (max-width: 768px) {
+
+    /* Header: abandona el float y centra todo */
+    header {
+        height: auto;
+        min-height: 180px;
+        padding: 1.2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header img {
+        float: none;
+        width: 70px;
+        margin: 0 0 0.6em 0;
+    }
+
+    header br {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        width: auto;
+        max-width: 90%;
+    }
+
+    header p {
+        font-size: 1.1em;
+        width: auto;
+        max-width: 90%;
+    }
+
+    /* Nav: permite wrap para que los ítems bajen de línea */
+    nav {
+        font-size: 0.95em;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3em;
+        padding: 0.4em;
+    }
+
+    nav li {
+        width: auto;
+        min-width: unset;
+        max-width: 170px;
+        flex: 1 1 40%;
+        margin: 0.1em;
+    }
+
+    nav li.lang-switch {
+        flex: 0 0 auto;
+        width: auto;
+    }
 }
