@@ -24,10 +24,7 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: cabin exterior or interior -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Cabin photo</span>
-                        </div>
+                        <img src="images/cabaña13.jpg" alt="Cabin example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-house-chimney" aria-hidden="true"></i> Cabins</h3>
@@ -44,10 +41,7 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: apartment interior -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Apartment photo</span>
-                        </div>
+                        <img src="images/cabaña7.jpg" alt="Apartment example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-building" aria-hidden="true"></i> Apartments</h3>
@@ -63,10 +57,7 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: room with beds -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Room photo</span>
-                        </div>
+                        <img src="images/cabaña2.jpg" alt="Room example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-door-open" aria-hidden="true"></i> Rooms</h3>

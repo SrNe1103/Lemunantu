@@ -40,10 +40,7 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- FOTO SUGERIDA: interior de departamento tipo -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Foto departamento</span>
-                        </div>
+                        <img src="images/cabaña7.jpg" alt="Departamento de ejemplo">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-building" aria-hidden="true"></i> Departamentos</h3>
@@ -59,10 +56,7 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- FOTO SUGERIDA: habitación tipo con camas -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Foto habitación</span>
-                        </div>
+                        <img src="images/cabaña2.jpg" alt="Habitación de ejemplo">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-door-open" aria-hidden="true"></i> Habitaciones</h3>
