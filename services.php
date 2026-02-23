@@ -93,7 +93,7 @@ require_once 'includes/header.php';
                 </div>
                 <div class="srv-icono-item">
                     <div class="srv-icono-img-wrap">
-                        <img src="images/parking.jpg" alt="Green areas at Lemunantu">
+                        <img src="images/green_space.jpg" alt="Áreas verdes y jardines de Lemunantu">
                     </div>
                     <i class="fa-solid fa-tree" aria-hidden="true"></i>
                     <h3>Green areas</h3>
@@ -102,10 +102,7 @@ require_once 'includes/header.php';
                 <div class="srv-icono-item">
                     <div class="srv-icono-img-wrap">
                         <!-- PHOTO SUGGESTION: children's play area -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Play area photo</span>
-                        </div>
+                        <img src="images/children_playground.jpg" alt="Áreas de juegos para niños de Cabañas Lemunantu">
                     </div>
                     <i class="fa-solid fa-children" aria-hidden="true"></i>
                     <h3>Children's play area</h3>
@@ -114,10 +111,7 @@ require_once 'includes/header.php';
                 <div class="srv-icono-item">
                     <div class="srv-icono-img-wrap">
                         <!-- PHOTO SUGGESTION: parking area -->
-                        <div class="srv-img-placeholder">
-                            <i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <span>Parking photo</span>
-                        </div>
+                        <img src="images/parking_up.jpg" alt="Estacionamiento privado de Cabañas Lemunantu">
                     </div>
                     <i class="fa-solid fa-square-parking" aria-hidden="true"></i>
                     <h3>Private parking</h3>
