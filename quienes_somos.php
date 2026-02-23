@@ -21,7 +21,8 @@ require_once 'includes/header.php';
                 <p>Detrás de cada construcción están los mismos de siempre: nuestros papás, que han llevado adelante este proyecto con sus propias manos y a su propio ritmo, sin perder el carácter familiar que lo define desde el principio.</p>
             </div>
             <div class="qs-imagen">
-                <img src="images/history.jpg" alt="Cabañas Lemunantu en 2005, mejorada con Nano Banana">
+                <!-- Imagen procesada: upscaling + edición manual + Nano Banana/Gemini -->
+                <img src="images/history.jpg" alt="Foto antigua de Cabañas Lemunantu en 2005">
             </div>
         </section>
 

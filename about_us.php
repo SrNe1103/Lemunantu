@@ -21,7 +21,8 @@ require_once 'includes/header.php';
                 <p>Behind every construction are the same people as always: our parents, who have built this project with their own hands and at their own pace, never losing the family spirit that has defined it from the start.</p>
             </div>
             <div class="qs-imagen">
-                <img src="images/museo.jpg" alt="Exterior del museo Memoria y Madera">
+                <!-- Imagen procesada: upscaling + edición manual + Nano Banana/Gemini -->
+                <img src="images/history.jpg" alt="Old photo of Cabañas Lemunantu in 2005">
             </div>
         </section>
 
