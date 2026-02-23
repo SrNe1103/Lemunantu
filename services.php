@@ -186,8 +186,8 @@ require_once 'includes/header.php';
                     </div>
                 </div>
                 <div class="srv-extra-item">
-                    <div class="srv-extra-img-wrap srv-extra-sin-foto">
-                        <i class="fa-solid fa-map-location-dot srv-big-icon" aria-hidden="true"></i>
+                    <div class="srv-extra-img-wrap">
+                        <img src="images/constitucion.jpg" alt="Air view of Constitución beach">
                     </div>
                     <div class="srv-extra-texto">
                         <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
