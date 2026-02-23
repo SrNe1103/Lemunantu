@@ -107,7 +107,7 @@ nav {
     font-size: 1.2em;
 }
 
-ul {
+nav ul {
     background-color: #5c3d1e;
     background-image: url(../images/wood_background.jpeg);
     background-repeat: repeat-x;

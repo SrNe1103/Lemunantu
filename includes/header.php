@@ -16,7 +16,7 @@ $i18n = [
         'nav' => [
             'home'    => ['href' => 'index.php',         'label' => 'Página principal'],
             'about'   => ['href' => 'quienes_somos.php', 'label' => 'Quiénes somos'],
-            'services'=> ['href' => '#servicios',        'label' => 'Servicios'],
+            'services'=> ['href' => 'servicios.php',        'label' => 'Servicios'],
             'gallery' => ['href' => '#galeria',          'label' => 'Galería'],
             'contact' => ['href' => '#contacto',         'label' => 'Contacto'],
         ],
@@ -29,7 +29,7 @@ $i18n = [
         'nav' => [
             'home'    => ['href' => 'main.php',   'label' => 'Main page'],
             'about'   => ['href' => 'about_us.php','label' => 'About us'],
-            'services'=> ['href' => '#services',  'label' => 'Services'],
+            'services'=> ['href' => 'services.php',  'label' => 'Services'],
             'gallery' => ['href' => '#gallery',   'label' => 'Gallery'],
             'contact' => ['href' => '#contact',   'label' => 'Contact'],
         ],

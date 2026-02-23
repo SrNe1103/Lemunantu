@@ -1,0 +1,428 @@
+/* =============================================
+   SERVICIOS — servicios.css
+   Paleta: Verde Profundo Moderno (Opción 4)
+   ============================================= */
+
+/* --- SECCIÓN BASE --- */
+.srv-seccion {
+    padding: 2.5em 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Secciones con fondo alternado */
+.srv-instalaciones,
+.srv-extras {
+    background-color: #cce6b0;
+    max-width: 100%;
+    padding: 2.5em 0;
+}
+
+.srv-instalaciones > *,
+.srv-extras > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* --- ENCABEZADO DE SECCIÓN --- */
+.srv-seccion-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+}
+
+.srv-seccion-header > i {
+    font-size: 1.8em;
+    color: #4d8c28;
+    flex-shrink: 0;
+}
+
+.srv-seccion-header h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1a3a0a;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
+}
+
+.srv-subtitulo {
+    width: 100%;
+    font-size: 1.05em;
+    color: #2f5c1a;
+    line-height: 1.6;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+}
+
+.srv-seccion-header--left {
+    margin-bottom: 0.8em;
+}
+
+/* --- CARDS DE ALOJAMIENTO --- */
+.srv-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.srv-card {
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26,58,10,0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.srv-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(26,58,10,0.18);
+}
+
+.srv-card-img-wrap {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.srv-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.srv-card:hover .srv-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+.srv-card-contenido {
+    padding: 1.3em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.srv-card-contenido h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.srv-card-contenido h3 i {
+    color: #4d8c28;
+    font-size: 0.95em;
+}
+
+.srv-card-contenido p {
+    font-size: 0.92em;
+    color: #2f5c1a;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 0.8em;
+}
+
+/* --- LISTA DE AMENITIES --- */
+.srv-amenities {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+}
+
+.srv-amenities li {
+    font-size: 0.88em;
+    color: #1a3a0a;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.srv-amenities li i {
+    color: #4d8c28;
+    font-size: 0.85em;
+    flex-shrink: 0;
+}
+
+/* --- NOTA INFORMATIVA --- */
+.srv-nota {
+    font-size: 0.9em;
+    color: #2f5c1a;
+    background-color: rgba(255,255,255,0.6);
+    border-left: 3px solid #7ab840;
+    padding: 0.7em 1em;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.srv-nota a {
+    color: #4d8c28;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.srv-nota a:hover {
+    color: #2f5c1a;
+    text-decoration: underline;
+}
+
+/* --- GRID DE INSTALACIONES --- */
+.srv-iconos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2em;
+}
+
+.srv-icono-item {
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(26,58,10,0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.srv-icono-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(26,58,10,0.18);
+}
+
+.srv-icono-img-wrap {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.srv-icono-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.srv-icono-item:hover .srv-icono-img-wrap img {
+    transform: scale(1.06);
+}
+
+/* Tarjetas sin foto: fondo verde con ícono grande centrado */
+.srv-icono-sin-foto {
+    background-color: #dff0c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.srv-big-icon {
+    font-size: 3em;
+    color: #4d8c28;
+    opacity: 0.7;
+}
+
+.srv-icono-item > i {
+    font-size: 1.4em;
+    color: #4d8c28;
+    padding: 0.6em 1em 0;
+}
+
+.srv-icono-item h3 {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: #1a3a0a;
+    padding: 0.3em 1em 0;
+}
+
+.srv-icono-item p {
+    font-size: 0.83em;
+    color: #2f5c1a;
+    line-height: 1.55;
+    padding: 0.4em 1em 1em;
+    text-align: justify;
+}
+
+/* --- SALÓN DE EVENTOS --- */
+.srv-salon {
+    padding: 2.5em 3em;
+}
+
+.srv-salon-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5em;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.srv-texto p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #1a3a0a;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.srv-imagen img {
+    width: 100%;
+    border: 8px groove #2f5c1a;
+    border-radius: 6px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.srv-imagen img:hover {
+    transform: scale(1.02);
+}
+
+/* --- EXTRAS (museo + info turística) --- */
+.srv-extras-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.srv-extra-item {
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26,58,10,0.10);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.srv-extra-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(26,58,10,0.18);
+}
+
+.srv-extra-img-wrap {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.srv-extra-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.srv-extra-item:hover .srv-extra-img-wrap img {
+    transform: scale(1.05);
+}
+
+.srv-extra-sin-foto {
+    background-color: #dff0c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.srv-extra-texto {
+    padding: 1.3em;
+}
+
+.srv-extra-texto > i {
+    font-size: 1.5em;
+    color: #4d8c28;
+    margin-bottom: 0.4em;
+    display: block;
+}
+
+.srv-extra-texto h3 {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.5em;
+}
+
+.srv-extra-texto p {
+    font-size: 0.92em;
+    color: #2f5c1a;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- PLACEHOLDERS --- */
+.srv-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e8f5d0;
+    border-bottom: 2px dashed #4d8c28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    color: #4d8c28;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.srv-img-placeholder i {
+    font-size: 2em;
+    opacity: 0.5;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 1024px) {
+    .srv-iconos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .srv-seccion,
+    .srv-salon {
+        padding: 1.5em;
+    }
+
+    .srv-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .srv-salon-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .srv-extras-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .srv-instalaciones > *,
+    .srv-extras > * {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .srv-iconos-grid {
+        grid-template-columns: 1fr;
+    }
+}
