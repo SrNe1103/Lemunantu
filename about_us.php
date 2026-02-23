@@ -57,10 +57,7 @@ require_once 'includes/header.php';
         <section class="qs-seccion qs-sustentabilidad">
             <div class="qs-imagen">
                 <!-- PHOTO SUGGESTION: solar water heater or grey water system installed on site -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Photo of sustainable installations</span>
-                </div>
+                <img src="images/calefactor.jpg" alt="Solar water heater in Cabañas Lemunantu">
             </div>
             <div class="qs-texto">
                 <h2>Working towards sustainability</h2>

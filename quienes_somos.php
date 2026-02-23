@@ -57,10 +57,7 @@ require_once 'includes/header.php';
         <section class="qs-seccion qs-sustentabilidad">
             <div class="qs-imagen">
                 <!-- FOTO SUGERIDA: panel solar o calefactor solar instalado en el recinto -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Foto instalaciones sustentables</span>
-                </div>
+                <img src="images/calefactor.jpg" alt="Calefactor solar de agua en Cabañas Lemunantu">
             </div>
             <div class="qs-texto">
                 <h2>Avanzando hacia la sustentabilidad</h2>
