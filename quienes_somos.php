@@ -21,11 +21,7 @@ require_once 'includes/header.php';
                 <p>Detrás de cada construcción están los mismos de siempre: nuestros papás, que han llevado adelante este proyecto con sus propias manos y a su propio ritmo, sin perder el carácter familiar que lo define desde el principio.</p>
             </div>
             <div class="qs-imagen">
-                <!-- FOTO SUGERIDA: foto de los fundadores o foto antigua del recinto (circa 2003-2010) -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Foto histórica del recinto</span>
-                </div>
+                <img src="images/history.jpg" alt="Cabañas Lemunantu en 2005, mejorada con Nano Banana">
             </div>
         </section>
 
@@ -81,11 +77,7 @@ require_once 'includes/header.php';
                 <p>También fue construido por nuestros papás. Es un proyecto personal que se convirtió en algo que cualquier visitante puede recorrer y disfrutar.</p>
             </div>
             <div class="qs-imagen">
-                <!-- FOTO SUGERIDA: interior del museo "Memoria y Madera", detalle de fotos o exhibición -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Foto interior museo Memoria y Madera</span>
-                </div>
+                <img src="images/museo.jpg" alt="Exterior del museo Memoria y Madera">
             </div>
         </section>
 

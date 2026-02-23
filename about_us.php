@@ -21,11 +21,7 @@ require_once 'includes/header.php';
                 <p>Behind every construction are the same people as always: our parents, who have built this project with their own hands and at their own pace, never losing the family spirit that has defined it from the start.</p>
             </div>
             <div class="qs-imagen">
-                <!-- PHOTO SUGGESTION: photo of the founders or an old photo of the property (circa 2003–2010) -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Historical photo of the lodge</span>
-                </div>
+                <img src="images/museo.jpg" alt="Exterior del museo Memoria y Madera">
             </div>
         </section>
 
@@ -81,11 +77,7 @@ require_once 'includes/header.php';
                 <p>It was also built by our parents. A personal project that became something every visitor can walk through and enjoy.</p>
             </div>
             <div class="qs-imagen">
-                <!-- PHOTO SUGGESTION: interior of the "Memoria y Madera" museum, detail of photos or exhibit -->
-                <div class="qs-imagen-placeholder">
-                    <i class="fa-solid fa-image" aria-hidden="true"></i>
-                    <span>Photo — Memoria y Madera museum interior</span>
-                </div>
+                <img src="images/museo.jpg" alt="Memoria y Madera museum outside">
             </div>
         </section>
 
