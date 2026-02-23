@@ -162,7 +162,7 @@ require_once 'includes/header.php';
                     <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Available on reservation. <a href="#contact">Contact us</a> to check availability.</p>
                 </div>
                 <div class="srv-imagen">
-                    <img src="images/salon.jpeg" alt="Event hall at Cabañas Lemunantu, capacity for 40 people">
+                    <img src="images/salon.jpg" alt="Event hall at Cabañas Lemunantu, capacity for 40 people">
                 </div>
             </div>
         </section>

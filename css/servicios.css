@@ -282,8 +282,8 @@
     margin-bottom: 1em;
 }
 
-.srv-imagen img {
-    width: 100%;
+.srv-salon .srv-imagen img {
+    width: 80%;
     border: 8px groove #2f5c1a;
     border-radius: 6px;
     box-shadow: 4px 4px 16px rgba(0,0,0,0.20);

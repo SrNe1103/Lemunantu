@@ -161,7 +161,7 @@ require_once 'includes/header.php';
                     <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Disponible bajo reserva. <a href="#contacto">Contáctanos</a> para consultar disponibilidad.</p>
                 </div>
                 <div class="srv-imagen">
-                    <img src="images/salon.jpeg" alt="Salón de eventos de Cabañas Lemunantu con capacidad para 40 personas">
+                    <img src="images/salon.jpg" alt="Salón de eventos de Cabañas Lemunantu con capacidad para 40 personas">
                 </div>
             </div>
         </section>
