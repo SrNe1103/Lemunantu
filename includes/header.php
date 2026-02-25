@@ -60,7 +60,10 @@ $t           = $i18n[$lang];
     <title><?= htmlspecialchars($title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($description) ?>">
 
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -84,17 +87,8 @@ $t           = $i18n[$lang];
         <p><?= $t['tagline'] ?></p>
     </header>
 
-<nav id="nav-principal">
-        <button
-            class="nav-hamburguesa"
-            id="nav-toggle"
-            aria-controls="nav-menu"
-            aria-expanded="false"
-            aria-label="Abrir menú de navegación">
-            <i class="fa-solid fa-bars" id="nav-toggle-icon" aria-hidden="true"></i>
-        </button>
-
-        <ul id="nav-menu">
+    <nav>
+        <ul>
             <li class="lang-switch">
                 <a href="<?= $t['lang_switch']['href'] ?>" title="<?= $t['lang_switch']['title'] ?>" class="icon">
                     <i class="fa-solid fa-language" aria-label="<?= $t['lang_switch']['title'] ?>"></i>
@@ -107,28 +101,3 @@ $t           = $i18n[$lang];
             <?php endforeach; ?>
         </ul>
     </nav>
-
-<script>
-(function() {
-    const toggle = document.getElementById('nav-toggle');
-    const menu   = document.getElementById('nav-menu');
-    const icon   = document.getElementById('nav-toggle-icon');
-
-    toggle.addEventListener('click', function() {
-        const abierto = menu.classList.toggle('nav-abierto');
-        toggle.setAttribute('aria-expanded', abierto);
-        icon.className = abierto
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars';
-    });
-
-    // Cerrar al hacer click en un enlace
-    menu.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-            menu.classList.remove('nav-abierto');
-            toggle.setAttribute('aria-expanded', 'false');
-            icon.className = 'fa-solid fa-bars';
-        });
-    });
-})();
-</script>

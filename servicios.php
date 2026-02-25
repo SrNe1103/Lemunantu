@@ -17,22 +17,21 @@ require_once 'includes/header.php';
             <div class="srv-seccion-header">
                 <i class="fa-solid fa-bed" aria-hidden="true"></i>
                 <h2>Alojamiento</h2>
-                <p class="srv-subtitulo">16 unidades equipadas para hasta 62 personas en total. Todas incluyen sábanas, loza, ollas, cocina y baño privado.</p>
+                <p class="srv-subtitulo">16 unidades equipadas para 2 hasta 6 personas en total. Todas incluyen sábanas, loza, ollas, cocina y baño privado.</p>
             </div>
 
             <div class="srv-cards-grid">
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
-                        <img src="images/cabaña13.jpg" alt="Cabaña de ejemplo">
+                        <img src="images/galeria/cabanas/cabaña13.jpg" alt="Cabaña de ejemplo">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-house-chimney" aria-hidden="true"></i> Cabañas</h3>
-                        <p>Nuestras cabañas de madera son la opción más completa. Cuentan con todo lo necesario para una estadía cómoda e independiente, con capacidad de hasta <strong>7 personas</strong> por unidad.</p>
+                        <p>Nuestras cabañas de madera son la opción más completa. Cuentan con todo lo necesario para una estadía cómoda e independiente, con capacidad de hasta <strong>6 personas</strong> por unidad.</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sábanas y ropa de cama</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cocina equipada con loza y ollas</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Baño privado</li>
-                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hasta 7 personas</li>
                         </ul>
                     </div>
                 </article>
@@ -40,11 +39,11 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- FOTO SUGERIDA: interior de departamento tipo -->
-                        <img src="images/cabaña7.jpg" alt="Departamento de ejemplo">
+                        <img src="images/galeria/cabanas/cabaña7.jpg" alt="Departamento de ejemplo">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-building" aria-hidden="true"></i> Departamentos</h3>
-                        <p>Unidades tipo departamento con distribución independiente, ideales para estadías más largas o grupos que valoran tener su propio espacio.</p>
+                        <p>Unidades tipo departamento con distribución común, ideales para estadías en familia. Las mismas facilidades que una cabaña en un espacio más compacto</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sábanas y ropa de cama</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cocina equipada con loza y ollas</li>
@@ -56,14 +55,13 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- FOTO SUGERIDA: habitación tipo con camas -->
-                        <img src="images/cabaña2.jpg" alt="Habitación de ejemplo">
+                        <img src="images/galeria/cabanas/cabaña2.jpg" alt="Habitación de ejemplo">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-door-open" aria-hidden="true"></i> Habitaciones</h3>
                         <p>Habitaciones equipadas para quienes buscan una opción cómoda y práctica, con todo lo esencial para descansar bien.</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sábanas y ropa de cama</li>
-                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cocina equipada con loza y ollas</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Baño privado</li>
                         </ul>
                     </div>
@@ -158,7 +156,7 @@ require_once 'includes/header.php';
                         <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cocina y refrigerador</li>
                         <li><i class="fa-solid fa-check" aria-hidden="true"></i> Quincho Uruguayo</li>
                     </ul>
-                    <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Disponible bajo reserva. <a href="#contacto">Contáctanos</a> para consultar disponibilidad.</p>
+                    <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Disponible bajo reserva. <a href="contacto.php">Contáctanos</a> para consultar disponibilidad.</p>
                 </div>
                 <div class="srv-imagen">
                     <img src="images/salon.jpg" alt="Salón de eventos de Cabañas Lemunantu con capacidad para 40 personas">
@@ -181,7 +179,7 @@ require_once 'includes/header.php';
                     <div class="srv-extra-texto">
                         <i class="fa-solid fa-landmark" aria-hidden="true"></i>
                         <h3>Museo Memoria y Madera</h3>
-                        <p>Dentro del propio recinto podrás recorrer nuestro pequeño museo, que rescata la historia de Constitución a través de fotografías y objetos. El recorrido es con <strong>aporte voluntario</strong>.</p>
+                        <p>Dentro del propio recinto podrás recorrer nuestro pequeño museo, que rescata la historia de Constitución a través de fotografías y objetos. El recorrido es <strong>gratuito</strong> con aporte voluntario.</p>
                     </div>
                 </div>
                 <div class="srv-extra-item">

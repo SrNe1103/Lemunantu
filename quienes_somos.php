@@ -17,8 +17,8 @@ require_once 'includes/header.php';
             <div class="qs-texto">
                 <h2>Nuestra historia</h2>
                 <p>Lemunantu nació en <strong>2003</strong> como un proyecto familiar en el sector de Junquillar, a orillas de la ruta costera al norte de Constitución. En sus inicios era un lugar sencillo: camping y piscina. Sin grandes inversiones, sin fórmulas mágicas — solo trabajo constante y la convicción de que el lugar tenía algo especial.</p>
-                <p>Con los años, de a poco, fueron sumándose las cabañas. Una, luego otra, luego otra más. Hoy el recinto cuenta con <strong>16 unidades de alojamiento</strong> — entre cabañas, habitaciones y habitaciones tipo departamento — con capacidad para <strong>62 personas</strong>.</p>
-                <p>Detrás de cada construcción están los mismos de siempre: nuestros papás, que han llevado adelante este proyecto con sus propias manos y a su propio ritmo, sin perder el carácter familiar que lo define desde el principio.</p>
+                <p>Con los años, de a poco, fueron sumándose las cabañas. Una, luego otra, luego otra más. Hoy el recinto cuenta con <strong>16 unidades de alojamiento</strong> — entre cabañas, habitaciones y habitaciones tipo departamento — con capacidades para <strong>2 hasta 6 personas</strong>.</p>
+                <p>Detrás de cada construcción están los mismos de siempre: nuestra familia, que han llevado adelante este proyecto con sus propias manos y a su ritmo, sin perder el carácter hogareño que lo define desde el principio.</p>
             </div>
             <div class="qs-imagen">
                 <!-- Imagen procesada: upscaling + edición manual + Nano Banana/Gemini -->
@@ -33,7 +33,7 @@ require_once 'includes/header.php';
                 <div class="qs-valor-item">
                     <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
                     <h3>Empresa familiar</h3>
-                    <p>Seguimos siendo un negocio de familia, con pocos empleados externos. Eso se nota en el trato, en los detalles y en cómo está cuidado el espacio.</p>
+                    <p>Seguimos siendo un negocio de familia. Desde la recepción a los detalles, queremos hacer de su visita algo para recordar.</p>
                 </div>
                 <div class="qs-valor-item">
                     <i class="fa-solid fa-rotate" aria-hidden="true"></i>
@@ -72,7 +72,7 @@ require_once 'includes/header.php';
             <div class="qs-texto">
                 <h2>Memoria y Madera</h2>
                 <p>En el último año inauguramos un pequeño museo dentro del propio recinto. A través de <strong>fotografías históricas y objetos</strong>, "Memoria y Madera" busca rescatar y mostrar el pasado de Constitución — su gente, sus costumbres, su historia.</p>
-                <p>También fue construido por nuestros papás. Es un proyecto personal que se convirtió en algo que cualquier visitante puede recorrer y disfrutar.</p>
+                <p>Es un proyecto gratuito que cualquier visitante puede recorrer y disfrutar. Recibimos aportes voluntarios para la mantención de este espacio para recordar.</p>
             </div>
             <div class="qs-imagen">
                 <img src="images/museo.jpg" alt="Exterior del museo Memoria y Madera">

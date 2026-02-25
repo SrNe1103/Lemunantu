@@ -17,23 +17,22 @@ require_once 'includes/header.php';
             <div class="srv-seccion-header">
                 <i class="fa-solid fa-bed" aria-hidden="true"></i>
                 <h2>Accommodation</h2>
-                <p class="srv-subtitulo">16 fully equipped units for up to 62 guests in total. All units include bed linen, kitchenware, cookware and a private bathroom.</p>
+                <p class="srv-subtitulo">16 fully equipped units for 2 to 6 guests in total. All units include bed linen, kitchenware, cookware and a private bathroom.</p>
             </div>
 
             <div class="srv-cards-grid">
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: cabin exterior or interior -->
-                        <img src="images/cabaña13.jpg" alt="Cabin example">
+                        <img src="images/galeria/cabanas/cabaña13.jpg" alt="Cabin example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-house-chimney" aria-hidden="true"></i> Cabins</h3>
-                        <p>Our wooden cabins are the most complete option. Fully equipped for a comfortable and independent stay, with capacity for up to <strong>7 guests</strong> per unit.</p>
+                        <p>Our wooden cabins are the most complete option. Fully equipped for a comfortable and independent stay, with capacity for up to <strong>6 guests</strong> per unit.</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Bed linen included</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Equipped kitchen with cookware</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Private bathroom</li>
-                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Up to 7 guests</li>
                         </ul>
                     </div>
                 </article>
@@ -41,11 +40,11 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: apartment interior -->
-                        <img src="images/cabaña7.jpg" alt="Apartment example">
+                        <img src="images/galeria/cabanas/cabaña7.jpg" alt="Apartment example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-building" aria-hidden="true"></i> Apartments</h3>
-                        <p>Apartment-style units with independent layout, ideal for longer stays or groups who value having their own space.</p>
+                        <p>Apartment-style units with common layout, ideal for family stays. The same facilities as a cabin in a more compact space</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Bed linen included</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Equipped kitchen with cookware</li>
@@ -57,14 +56,13 @@ require_once 'includes/header.php';
                 <article class="srv-card">
                     <div class="srv-card-img-wrap">
                         <!-- PHOTO SUGGESTION: room with beds -->
-                        <img src="images/cabaña2.jpg" alt="Room example">
+                        <img src="images/galeria/cabanas/cabaña2.jpg" alt="Room example">
                     </div>
                     <div class="srv-card-contenido">
                         <h3><i class="fa-solid fa-door-open" aria-hidden="true"></i> Rooms</h3>
                         <p>Equipped rooms for guests looking for a comfortable and practical option, with everything needed for a good rest.</p>
                         <ul class="srv-amenities">
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Bed linen included</li>
-                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Equipped kitchen with cookware</li>
                             <li><i class="fa-solid fa-check" aria-hidden="true"></i> Private bathroom</li>
                         </ul>
                     </div>
@@ -159,7 +157,7 @@ require_once 'includes/header.php';
                         <li><i class="fa-solid fa-check" aria-hidden="true"></i> Kitchen and refrigerator</li>
                         <li><i class="fa-solid fa-check" aria-hidden="true"></i> Uruguayan barbecue (quincho)</li>
                     </ul>
-                    <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Available on reservation. <a href="#contact">Contact us</a> to check availability.</p>
+                    <p class="srv-nota"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Available on reservation. <a href="contact.php">Contact us</a> to check availability.</p>
                 </div>
                 <div class="srv-imagen">
                     <img src="images/salon.jpg" alt="Event hall at Cabañas Lemunantu, capacity for 40 people">
@@ -182,7 +180,7 @@ require_once 'includes/header.php';
                     <div class="srv-extra-texto">
                         <i class="fa-solid fa-landmark" aria-hidden="true"></i>
                         <h3>Museo Memoria y Madera</h3>
-                        <p>Within the property you can visit our small museum, which preserves the history of Constitución through photographs and objects. Entry is by <strong>voluntary contribution</strong>.</p>
+                        <p>Within the property you can visit our small museum, which preserves the history of Constitución through photographs and objects. Entry is  <strong>free</strong> with voluntary contribution.</p>
                     </div>
                 </div>
                 <div class="srv-extra-item">

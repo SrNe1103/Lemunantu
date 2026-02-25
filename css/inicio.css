@@ -190,13 +190,6 @@
     font-size: 1.1em;
 }
 
-.ubicacion-mapa img {
-    width: 100%;
-    border: 8px groove #2f5c1a;
-    border-radius: 6px;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
-}
-
 .btn-maps {
     display: inline-flex;
     align-items: center;
@@ -243,44 +236,22 @@
     }
 }
 
-/* --- SECCIÓN VIDEO --- */
-.seccion-video {
-    background-color: #cce6b0;
-    padding: 2.5em 3em;
-}
-
-.seccion-video .seccion-titulo {
-    max-width: 1200px;
-    margin: 0 auto 1.2em;
-}
-
-/* Contenedor responsivo 16:9 */
-.video-wrapper {
-    position: relative;
-    max-width: 900px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(26,58,10,0.20);
-    border: 4px solid #4d8c28;
-}
-
-.video-wrapper iframe {
-    position: absolute;
-    inset: 0;
+/* --- MAPA OPENSTREETMAP --- */
+.osm-mapa {
     width: 100%;
-    height: 100%;
-    border: none;
+    height: 350px;
+    border: 8px groove #2f5c1a;
+    border-radius: 6px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.20);
+}
+
+/* Asegurar que los tiles de Leaflet se vean correctamente */
+.osm-mapa .leaflet-tile {
+    filter: none;
 }
 
 @media (max-width: 900px) {
-    .seccion-video {
-        padding: 1.5em;
-    }
-
-    /* En móvil el max-width ya no aplica, volvemos al 56.25% estándar */
-    .video-wrapper {
-        padding-top: 56.25%;
+    .osm-mapa {
+        height: 260px;
     }
 }

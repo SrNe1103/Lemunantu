@@ -101,8 +101,8 @@ require_once 'includes/header.php';
                         </div>
                     </div>
 
-                    <div class="ctt-mapa-wrap">
-                        <img src="images/mapa_constitucion.jpg" alt="Mapa de ubicación de Cabañas Lemunantu en Constitución">
+                    <div class="ubicacion-mapa">
+                        <div id="mapa-osm" class="osm-mapa" aria-label="Mapa de ubicación de Cabañas Lemunantu"></div>
                     </div>
 
                 </aside>
@@ -155,4 +155,29 @@ document.getElementById('nombre').addEventListener('input', function() {
 });
 </script>
 
+\* Open Street Map
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {
+    var lat = -35.27373410581925;
+    var lng = -72.34634231034285;
+    var mapa = L.map('mapa-osm', { center: [lat, lng], zoom: 15, scrollWheelZoom: true });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+    }).addTo(mapa);
+    var icono = L.divIcon({
+        html: '<i class="fa-solid fa-location-dot" style="font-size:2em;color:#4d8c28;filter:drop-shadow(0 2px 3px rgba(0,0,0,0.4))"></i>',
+        className: '',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -34]
+    });
+    L.marker([lat, lng], { icon: icono })
+        .addTo(mapa)
+        .bindPopup('<strong>Ecoturismo Lemunantu</strong><br>Junquillar Lote 5, Constitución')
+        .openPopup();
+})();
+</script>
 <?php require_once 'includes/footer.php'; ?>

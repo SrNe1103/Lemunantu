@@ -17,8 +17,8 @@ require_once 'includes/header.php';
             <div class="qs-texto">
                 <h2>Our story</h2>
                 <p>Lemunantu was born in <strong>2003</strong> as a family project in the Junquillar area, along the coastal road north of Constitución. It started simply: camping and a swimming pool. No big investments, no magic formula — just steady work and the belief that this place had something special.</p>
-                <p>Over the years, one by one, the cabins were added. One, then another, then one more. Today the lodge has <strong>16 accommodation units</strong> — cabins, rooms and apartment-style rooms — with capacity for <strong>62 guests</strong>.</p>
-                <p>Behind every construction are the same people as always: our parents, who have built this project with their own hands and at their own pace, never losing the family spirit that has defined it from the start.</p>
+                <p>Over the years, one by one, the cabins were added. One, then another, then one more. Today the lodge has <strong>16 accommodation units</strong> — cabins, rooms and apartment-style rooms — with capacity for <strong>2 to 6 guests</strong>.</p>
+                <p>Behind every construction are the same people as always: our family, who have built this project with their own hands and at their own pace, never losing the home spirit that has defined it from the start.</p>
             </div>
             <div class="qs-imagen">
                 <!-- Imagen procesada: upscaling + edición manual + Nano Banana/Gemini -->
@@ -33,7 +33,7 @@ require_once 'includes/header.php';
                 <div class="qs-valor-item">
                     <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
                     <h3>Family-run</h3>
-                    <p>We are still a family business, with very few outside employees. That shows in the care, the details, and the way the place is looked after.</p>
+                    <p>We are still a family business. From the reception to the details, we want to make your visit something to remember.</p>
                 </div>
                 <div class="qs-valor-item">
                     <i class="fa-solid fa-rotate" aria-hidden="true"></i>
@@ -72,7 +72,7 @@ require_once 'includes/header.php';
             <div class="qs-texto">
                 <h2>Memoria y Madera</h2>
                 <p>Last year we opened a small museum within the property itself. Through <strong>historical photographs and objects</strong>, "Memoria y Madera" (Memory and Wood) aims to preserve and share the history of Constitución — its people, its traditions, its past.</p>
-                <p>It was also built by our parents. A personal project that became something every visitor can walk through and enjoy.</p>
+                <p>It's a free project that every person can visit and enjoy. We recieve voluntary contributions for the maintenance of this space for remembering.</p>
             </div>
             <div class="qs-imagen">
                 <img src="images/museo.jpg" alt="Memoria y Madera museum outside">
