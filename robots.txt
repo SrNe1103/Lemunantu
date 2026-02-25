@@ -1,0 +1,15 @@
+# robots.txt — Ecoturismo Lemunantu
+# https://www.cabanaslemunantu.cl
+
+User-agent: *
+
+# Permitir todo el sitio público
+Allow: /
+
+# Bloquear carpetas internas que no deben indexarse
+Disallow: /includes/
+Disallow: /css/
+Disallow: /cgi-bin/
+
+# Sitemap
+Sitemap: https://www.cabanaslemunantu.cl/sitemap.xml
