@@ -1,0 +1,278 @@
+/* =============================================
+   CONTACTO — contacto.css
+   Paleta: Verde Profundo Moderno (Opción 4)
+   ============================================= */
+
+/* --- SECCIÓN CONTENEDOR --- */
+.ctt-seccion {
+    padding: 2.5em 3em;
+    max-width: 1200px;
+    margin: 0 auto 2em;
+}
+
+/* Layout principal: formulario + aside */
+.ctt-principal {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2.5em;
+    align-items: start;
+}
+
+/* =============================================
+   BLOQUE WHATSAPP
+   ============================================= */
+
+.ctt-whatsapp-bloque {
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-radius: 12px;
+    padding: 2em;
+    box-shadow: 0 2px 16px rgba(26,58,10,0.10);
+}
+
+/* Header del bloque con ícono WhatsApp */
+.ctt-wa-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    margin-bottom: 1em;
+}
+
+.ctt-wa-header > i {
+    font-size: 2.8em;
+    color: #25D366;   /* verde WhatsApp oficial */
+    flex-shrink: 0;
+}
+
+.ctt-wa-header h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #1a3a0a;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
+}
+
+.ctt-wa-subtitulo {
+    font-size: 0.95em;
+    color: #2f5c1a;
+    padding-left: 0.6em;
+    margin-top: 0.2em;
+}
+
+.ctt-wa-descripcion {
+    font-size: 1em;
+    color: #1a3a0a;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+}
+
+/* --- FORMULARIO --- */
+.ctt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ctt-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.ctt-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.ctt-form-group label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #1a3a0a;
+}
+
+.ctt-opcional {
+    font-weight: 400;
+    color: #4d8c28;
+    font-size: 0.88em;
+}
+
+.ctt-form-group input,
+.ctt-form-group select,
+.ctt-form-group textarea {
+    border: 1.5px solid #aad480;
+    border-radius: 6px;
+    padding: 0.55em 0.8em;
+    font-size: 0.95em;
+    font-family: inherit;
+    color: #1a3a0a;
+    background-color: #f5fbee;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    outline: none;
+}
+
+.ctt-form-group input:focus,
+.ctt-form-group select:focus,
+.ctt-form-group textarea:focus {
+    border-color: #4d8c28;
+    box-shadow: 0 0 0 3px rgba(77,140,40,0.15);
+    background-color: #ffffff;
+}
+
+.ctt-form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* --- BOTÓN WHATSAPP --- */
+.ctt-btn-wa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    padding: 0.75em 1.6em;
+    background-color: #25D366;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(37,211,102,0.35);
+    margin-top: 0.3em;
+}
+
+.ctt-btn-wa:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 16px rgba(37,211,102,0.45);
+}
+
+.ctt-btn-wa:active {
+    transform: translateY(0);
+}
+
+.ctt-btn-wa i {
+    font-size: 1.2em;
+}
+
+.ctt-btn-disabled {
+    background-color: #a8d4b8 !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+}
+
+/* Enlace directo */
+.ctt-wa-directo {
+    margin-top: 1.2em;
+    font-size: 0.9em;
+    color: #2f5c1a;
+    text-align: center;
+}
+
+.ctt-wa-directo a {
+    color: #4d8c28;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.ctt-wa-directo a:hover {
+    color: #2f5c1a;
+    text-decoration: underline;
+}
+
+/* =============================================
+   ASIDE INFO LATERAL
+   ============================================= */
+
+.ctt-info-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ctt-info-card {
+    background-color: #ffffff;
+    border: 1px solid #aad480;
+    border-radius: 10px;
+    padding: 1.2em 1.3em;
+    display: flex;
+    gap: 0.9em;
+    align-items: flex-start;
+    box-shadow: 0 2px 10px rgba(26,58,10,0.08);
+}
+
+.ctt-info-card > i {
+    font-size: 1.4em;
+    color: #4d8c28;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+}
+
+.ctt-info-card h3 {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: #1a3a0a;
+    margin-bottom: 0.35em;
+}
+
+.ctt-info-card address,
+.ctt-info-card p {
+    font-style: normal;
+    font-size: 0.9em;
+    color: #2f5c1a;
+    line-height: 1.6;
+}
+
+.ctt-link-maps {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-top: 0.5em;
+    font-size: 0.88em;
+    font-weight: 700;
+    color: #4d8c28;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.ctt-link-maps:hover {
+    color: #2f5c1a;
+    text-decoration: underline;
+}
+
+/* Mapa */
+.ctt-mapa-wrap img {
+    width: 100%;
+    border: 6px groove #2f5c1a;
+    border-radius: 8px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* =============================================
+   RESPONSIVIDAD
+   ============================================= */
+
+@media (max-width: 900px) {
+    .ctt-seccion {
+        padding: 1.5em;
+    }
+
+    .ctt-principal {
+        grid-template-columns: 1fr;
+    }
+
+    /* En móvil el aside va después del formulario */
+    .ctt-info-lateral {
+        order: 2;
+    }
+
+    .ctt-form-row {
+        grid-template-columns: 1fr;
+    }
+}
