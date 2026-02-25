@@ -1,9 +1,17 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/cca73425/public_html/test
-    # Copy the new ones excluding .git and .cpanel.yml
-    - rm -r $DEPLOYPATH/*
+    # Seleccionar destino según rama
+    - >
+      if [ "$BRANCH" = "master" ]; then
+        export DEPLOYPATH=/home3/cca73425/public_html
+      else
+        export DEPLOYPATH=/home3/cca73425/public_html/test
+      fi
+    # Eliminar solo las carpetas y archivos del proyecto (no todo public_html)
+    - rm -rf $DEPLOYPATH/css $DEPLOYPATH/images $DEPLOYPATH/includes
+    - rm -f $DEPLOYPATH/*.php $DEPLOYPATH/sitemap.xml $DEPLOYPATH/robots.txt
+    # Copiar archivos del repositorio excluyendo archivos de desarrollo
     - /bin/tar --exclude='.git' --exclude='.vscode' --exclude='.replit' --exclude='.cpanel.yml' -cf - . | (cd $DEPLOYPATH && /bin/tar -xvf -)
-    # Restore the permissions to drwxr-xr-x (755)
+    # Restaurar permisos
     - /bin/chmod 755 $DEPLOYPATH
