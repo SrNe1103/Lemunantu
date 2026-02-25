@@ -1,0 +1,283 @@
+/* =============================================
+   GALERÍA — galeria.css
+   Paleta: Verde Profundo Moderno (Opción 4)
+   ============================================= */
+
+/* --- SECCIÓN --- */
+.gal-seccion {
+    padding: 2.5em 3em;
+    max-width: 1200px;
+    margin: 0 auto 2em;
+}
+
+.gal-header {
+    margin-bottom: 1.5em;
+}
+
+.gal-header h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1a3a0a;
+    border-left: 4px solid #7ab840;
+    padding-left: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.gal-subtitulo {
+    font-size: 1.05em;
+    color: #2f5c1a;
+    padding-left: 0.8em;
+}
+
+/* --- FILTROS --- */
+.gal-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    margin-bottom: 1.8em;
+}
+
+.gal-filtro-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    padding: 0.45em 1em;
+    background-color: #ffffff;
+    border: 1.5px solid #aad480;
+    border-radius: 999px;
+    color: #2f5c1a;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease,
+                border-color 0.25s ease, transform 0.2s ease;
+}
+
+.gal-filtro-btn:hover {
+    background-color: #cce6b0;
+    border-color: #4d8c28;
+    transform: translateY(-1px);
+}
+
+.gal-filtro-btn.activo {
+    background-color: #4d8c28;
+    border-color: #2f5c1a;
+    color: #ffffff;
+}
+
+.gal-filtro-btn i {
+    font-size: 0.9em;
+}
+
+/* --- GRID --- */
+.gal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8em;
+}
+
+/* --- ITEMS --- */
+.gal-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #aad480;
+    box-shadow: 0 2px 8px rgba(26,58,10,0.10);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gal-item.oculto {
+    display: none;
+}
+
+.gal-item-btn {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: zoom-in;
+    display: block;
+}
+
+.gal-item-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.gal-item:hover .gal-item-btn img {
+    transform: scale(1.07);
+}
+
+/* --- CONTADOR --- */
+.gal-contador {
+    margin-top: 1.2em;
+    font-size: 0.88em;
+    color: #4d8c28;
+    font-weight: 600;
+    text-align: right;
+}
+
+.gal-vacio {
+    color: #4d8c28;
+    font-style: italic;
+    padding: 2em 0;
+}
+
+/* =============================================
+   LIGHTBOX
+   ============================================= */
+
+.gal-lb-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.88);
+    z-index: 1000;
+}
+
+.gal-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    pointer-events: none; /* hijos manejan sus propios eventos */
+}
+
+.gal-lightbox[hidden],
+.gal-lb-overlay[hidden] {
+    display: none;
+}
+
+/* Contenido central */
+.gal-lb-contenido {
+    pointer-events: auto;
+    max-width: calc(100vw - 140px);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.gal-lb-contenido img {
+    max-width: 100%;
+    max-height: calc(90vh - 3em);
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    display: block;
+}
+
+.gal-lb-categoria {
+    font-size: 0.88em;
+    font-weight: 600;
+    color: #aad480;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Botones de navegación */
+.gal-lb-prev,
+.gal-lb-next {
+    pointer-events: auto;
+    background-color: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.gal-lb-prev:hover,
+.gal-lb-next:hover {
+    background-color: rgba(77,140,40,0.5);
+    transform: scale(1.1);
+}
+
+/* Botón cerrar */
+.gal-lb-cerrar {
+    pointer-events: auto;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
+    z-index: 1002;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.gal-lb-cerrar:hover {
+    background-color: rgba(200,50,50,0.6);
+    transform: scale(1.1);
+}
+
+/* =============================================
+   RESPONSIVIDAD
+   ============================================= */
+
+@media (max-width: 1024px) {
+    .gal-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gal-seccion {
+        padding: 1.5em;
+    }
+
+    .gal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gal-lb-contenido {
+        max-width: calc(100vw - 100px);
+    }
+
+    .gal-lb-prev,
+    .gal-lb-next {
+        width: 38px;
+        height: 38px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .gal-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+    }
+
+    .gal-filtros {
+        gap: 0.4em;
+    }
+
+    .gal-filtro-btn {
+        font-size: 0.82em;
+        padding: 0.4em 0.75em;
+    }
+}

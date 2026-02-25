@@ -125,7 +125,13 @@ function enviarWhatsApp() {
     function formatFecha(f) {
         if (!f) return null;
         const [y, m, d] = f.split('-');
-        return `${d}/${m}/${y}`;
+        const fecha = new Date(y, m - 1, d); // mes va de 0 a 11 en JS
+        return fecha.toLocaleDateString('es-CL', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        });
     }
 
     let partes = ['Hola, me gustaría consultar disponibilidad en Cabañas Lemunantu.'];
