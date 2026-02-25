@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
+    - echo "BRANCH=$BRANCH" >> /home3/cca73425/public_html/deploy_debug.txt
     # Seleccionar destino según rama
     - >
       if [ "$BRANCH" = "master" ]; then
