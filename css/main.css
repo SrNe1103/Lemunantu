@@ -107,7 +107,7 @@ nav {
     font-size: 1.2em;
 }
 
-nav ul {
+ul {
     background-color: #5c3d1e;
     background-image: url(../images/wood_background.jpeg);
     background-repeat: repeat-x;
@@ -223,12 +223,32 @@ footer a:hover {
    RESPONSIVIDAD GLOBAL — main.css
    ============================================= */
 
-@media (max-width: 768px) {
+/* --- Título responsivo con clamp() --- */
+/* clamp(mínimo, preferido, máximo)      */
+/* En desktop se mantiene en 3.5em via .libre-franklin-title */
+header h1.libre-franklin-title {
+    font-size: clamp(1.4em, 7.5vw, 3.5em);
+}
 
-    /* Header: abandona el float y centra todo */
+header p {
+    font-size: clamp(0.95em, 2.5vw, 2em);
+}
+
+/* --- Botón hamburguesa: oculto en desktop --- */
+.nav-hamburguesa {
+    display: none;
+}
+
+/* =============================================
+   MÓVIL Y TABLET — < 900px
+   ============================================= */
+
+@media (max-width: 900px) {
+
+    /* --- Header --- */
     header {
         height: auto;
-        min-height: 180px;
+        min-height: 160px;
         padding: 1.2em 1em;
         display: flex;
         flex-direction: column;
@@ -239,8 +259,8 @@ footer a:hover {
 
     header img {
         float: none;
-        width: 70px;
-        margin: 0 0 0.6em 0;
+        width: 60px;
+        margin: 0 0 0.5em 0;
     }
 
     header br {
@@ -248,39 +268,87 @@ footer a:hover {
     }
 
     header h1 {
-        font-size: 1.8em;
         width: auto;
-        max-width: 90%;
+        max-width: 95%;
     }
 
     header p {
-        font-size: 1.1em;
         width: auto;
-        max-width: 90%;
+        max-width: 95%;
     }
 
-    /* Nav: permite wrap para que los ítems bajen de línea */
-    nav {
-        font-size: 0.95em;
+    /* --- Nav: contenedor posición relativa para anclar el menú --- */
+    #nav-principal {
+        position: relative;
+        background-color: #5c3d1e;
+        background-image: url(../images/wood_background.jpeg);
+        background-repeat: repeat-x;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.3em 0.8em;
+        min-height: 2.8em;
     }
 
-    ul {
-        flex-wrap: wrap;
+    /* --- Botón hamburguesa visible --- */
+    .nav-hamburguesa {
+        display: flex;
+        align-items: center;
         justify-content: center;
-        gap: 0.3em;
-        padding: 0.4em;
+        background-color: #4d8c28;
+        border: 1.5px solid #2f5c1a;
+        border-radius: 6px;
+        color: #ffffff;
+        font-size: 1.3em;
+        width: 2.2em;
+        height: 2.2em;
+        cursor: pointer;
+        z-index: 200;
+        transition: background-color 0.25s ease;
     }
 
+    .nav-hamburguesa:hover {
+        background-color: #2f5c1a;
+    }
+
+    /* --- Menú desplegable: oculto por defecto --- */
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 199;
+        flex-direction: column;
+        background-color: #5c3d1e;
+        background-image: url(../images/wood_background.jpeg);
+        background-repeat: repeat-x;
+        padding: 0.4em;
+        gap: 0.3em;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+    /* Cuando JS agrega la clase nav-abierto */
+    #nav-menu.nav-abierto {
+        display: flex;
+    }
+
+    /* Ítems apilados verticalmente */
     nav li {
-        width: auto;
-        min-width: unset;
-        max-width: 170px;
-        flex: 1 1 40%;
-        margin: 0.1em;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5em 0.8em;
+        width: 100%;
     }
 
     nav li.lang-switch {
-        flex: 0 0 auto;
         width: auto;
+        align-self: flex-end;
     }
 }

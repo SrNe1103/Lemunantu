@@ -84,8 +84,17 @@ $t           = $i18n[$lang];
         <p><?= $t['tagline'] ?></p>
     </header>
 
-    <nav>
-        <ul>
+<nav id="nav-principal">
+        <button
+            class="nav-hamburguesa"
+            id="nav-toggle"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación">
+            <i class="fa-solid fa-bars" id="nav-toggle-icon" aria-hidden="true"></i>
+        </button>
+
+        <ul id="nav-menu">
             <li class="lang-switch">
                 <a href="<?= $t['lang_switch']['href'] ?>" title="<?= $t['lang_switch']['title'] ?>" class="icon">
                     <i class="fa-solid fa-language" aria-label="<?= $t['lang_switch']['title'] ?>"></i>
@@ -98,3 +107,28 @@ $t           = $i18n[$lang];
             <?php endforeach; ?>
         </ul>
     </nav>
+
+<script>
+(function() {
+    const toggle = document.getElementById('nav-toggle');
+    const menu   = document.getElementById('nav-menu');
+    const icon   = document.getElementById('nav-toggle-icon');
+
+    toggle.addEventListener('click', function() {
+        const abierto = menu.classList.toggle('nav-abierto');
+        toggle.setAttribute('aria-expanded', abierto);
+        icon.className = abierto
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars';
+    });
+
+    // Cerrar al hacer click en un enlace
+    menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            menu.classList.remove('nav-abierto');
+            toggle.setAttribute('aria-expanded', 'false');
+            icon.className = 'fa-solid fa-bars';
+        });
+    });
+})();
+</script>

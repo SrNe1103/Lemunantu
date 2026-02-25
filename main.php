@@ -57,7 +57,21 @@ require_once 'includes/header.php';
             </div>
         </section>
 
-        <!-- SECTION 3: How to get here -->
+        <!-- SECTION 3: Video -->
+        <section class="seccion-video">
+            <h2 class="seccion-titulo">Discover Lemunantu</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/H8wLliymyDM"
+                    title="Ecoturismo Lemunantu video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- SECTION 4: How to get here -->
         <section class="seccion-ubicacion" id="how-to-get-here">
             <h2 class="seccion-titulo">How to get here</h2>
             <div class="ubicacion-contenido">

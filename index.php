@@ -57,7 +57,21 @@ require_once 'includes/header.php';
             </div>
         </section>
 
-        <!-- SECCIÓN 3: Cómo llegar -->
+        <!-- SECCIÓN 3: Video -->
+        <section class="seccion-video">
+            <h2 class="seccion-titulo">Conoce Lemunantu</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/H8wLliymyDM"
+                    title="Video de Ecoturismo Lemunantu"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: Cómo llegar -->
         <section class="seccion-ubicacion" id="como-llegar">
             <h2 class="seccion-titulo">¿Cómo llegar?</h2>
             <div class="ubicacion-contenido">
