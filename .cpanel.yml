@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    - echo "BRANCH=$BRANCH" >> /home3/cca73425/public_html/deploy_debug.txt
+    # Detectar rama activa desde Git
+    - export BRANCH=$(git rev-parse --abbrev-ref HEAD)
     # Seleccionar destino según rama
     - >
       if [ "$BRANCH" = "master" ]; then
