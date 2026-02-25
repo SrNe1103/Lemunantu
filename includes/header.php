@@ -59,6 +59,7 @@ $t           = $i18n[$lang];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($description) ?>">
+    <meta name="google-site-verification" content="lKSka1ZnDsCrVqK7I3avQaLm2VGyd3aZEIn9vRpx9Hw" />
 
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
